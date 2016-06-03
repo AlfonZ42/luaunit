@@ -1,4 +1,5 @@
 
+require('test.strict')
 lu = require('luaunit')
 
 TestFailuresWithXml = {} --class

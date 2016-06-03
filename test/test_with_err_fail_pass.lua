@@ -1,3 +1,4 @@
+require('test.strict')
 lu = require('luaunit')
 
 --[[ Test used by functional tests ]]

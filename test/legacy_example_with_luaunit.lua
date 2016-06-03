@@ -1,4 +1,5 @@
 EXPORT_ASSERT_TO_GLOBALS = true
+require('test.strict')
 require('luaunit')
 
 TestToto = {} --class
