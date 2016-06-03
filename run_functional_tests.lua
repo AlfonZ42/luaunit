@@ -1,6 +1,7 @@
 #!/usr/bin/env lua
 
 require('os')
+require('test.strict')
 lu = require('luaunit')
 
 

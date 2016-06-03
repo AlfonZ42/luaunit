@@ -1618,6 +1618,9 @@ TestLuaUnitErrorMsg = {} --class
 --
 ------------------------------------------------------------------
 
+-- declare global variables, so strict doesn't complain
+executedTests = nil
+foobar, foo = nil, nil -- referenced in TestLuaUnitExecution:testInvocation() only
 
 MyTestToto1 = {} --class
     function MyTestToto1:test1() table.insert( executedTests, "MyTestToto1:test1" ) end

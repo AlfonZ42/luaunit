@@ -36,6 +36,9 @@ M.VERBOSITY_VERBOSE = 20
 -- set EXPORT_ASSERT_TO_GLOBALS to have all asserts visible as global values
 -- EXPORT_ASSERT_TO_GLOBALS = true
 
+-- make sure the variable is marked global, so strict module, if loaded, doesn't complain
+EXPORT_ASSERT_TO_GLOBALS = rawget(_G, "EXPORT_ASSERT_TO_GLOBALS")
+
 -- we need to keep a copy of the script args before it is overriden
 local cmdline_argv = rawget(_G, "arg")
 
